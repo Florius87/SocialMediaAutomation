@@ -78,7 +78,6 @@ This project automates the process of scraping articles from [florisera.com](htt
 
     *(Replace 5 with your preferred number of articles to process)*
 
-## Usage
 ## Notes
 
 - You can add support for more platforms by extending `socialmedia.py` and related scripts.
