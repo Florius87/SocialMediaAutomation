@@ -2,6 +2,10 @@
 
 This project automates the process of scraping articles from [florisera.com](https://florisera.com), generating AI-powered social media posts, and managing an approval workflow before publishing to Twitter and LinkedIn.
 
+:information_source: **For full details and screenshots, read:**  
+[https://florisera.com/automate-your-social-media/](https://florisera.com/automate-your-social-media/)
+
+
 ## Features
 
 - Scrapes new article URLs from the florisera.com sitemap
