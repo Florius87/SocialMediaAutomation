@@ -1,4 +1,4 @@
-# AI-Powered Social Media & RSS Workflow
+# AI-Powered Social Media
 
 This project automates the process of scraping articles from [florisera.com](https://florisera.com), generating AI-powered social media posts, and managing an approval workflow before publishing to Twitter and LinkedIn.
 
