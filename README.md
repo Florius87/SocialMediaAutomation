@@ -14,18 +14,20 @@ This project automates the process of scraping articles from [florisera.com](htt
 
 ## Project Structure
 
-Approve.py # CLI for approving/denying posts
-crawler.py # Fetches article URLs from sitemap
-main.py # Extracts data and generates post drafts
-send.py # Posts approved tweets to Twitter
-tracker.py # CSV tracker for posts and statuses
-socialmedia.py # Social media prompt templates
-webparsing.py # Utilities for extracting and formatting article data
-config.py # Loads config from file (API keys, etc.)
-GUI.py # PyQt5 GUI for the workflow
-article_tracker.csv # Tracks articles and post statuses
-post_outputs/ # Generated post drafts for each platform
-bin/ # Denied post drafts (optional)
+| File/Folder           | Purpose                                     |
+|-----------------------|---------------------------------------------|
+| Approve.py            | CLI for approving/denying posts             |
+| crawler.py            | Fetches article URLs from sitemap           |
+| main.py               | Extracts data and generates post drafts     |
+| send.py               | Posts approved tweets to Twitter            |
+| tracker.py            | CSV tracker for posts and statuses          |
+| socialmedia.py        | Social media prompt templates               |
+| webparsing.py         | Extracts and formats article data           |
+| config.py             | Loads config (API keys, etc.)               |
+| GUI.py                | PyQt5 GUI for the workflow                  |
+| article_tracker.csv   | Tracks articles and post statuses           |
+| post_outputs/         | Generated post drafts for each platform     |
+| bin/                  | Denied post drafts (optional)               |
 
 
 ## Usage
