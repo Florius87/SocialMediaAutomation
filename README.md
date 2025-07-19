@@ -32,6 +32,8 @@ This project automates the process of scraping articles from [florisera.com](htt
 
 ## Usage
 
+
+
 1. **Install dependencies:**
 
     ```bash
@@ -49,34 +51,36 @@ This project automates the process of scraping articles from [florisera.com](htt
     TWITTER_ACCESS_SECRET=your_twitter_access_secret
     ```
 
-3. **Run the workflow:**
+3. **Run the Workflow (Recommended: GUI):**
 
-    - Crawl articles:  
-      ```bash
-      python crawler.py
-      ```
-    - Generate social media drafts:  
-      ```bash
-      python main.py 5
-      ```
-      *(replace 5 with the number of articles to process)*
-    - Approve or deny posts:  
-      ```bash
-      python Approve.py
-      ```
-    - Post to Twitter:  
-      ```bash
-      python send.py
-      ```
-    - (Optional GUI:  
-      ```bash
-      python GUI.py
-      ```
-      )
+    Simply start the graphical workflow manager:
 
+    ```bash
+    python GUI.py
+    ```
+
+    The GUI will let you:
+    - Crawl for new articles
+    - Generate AI-powered social media posts
+    - Approve or deny drafts
+    - Publish approved posts to Twitter
+
+4. **Manual (CLI) Usage (Advanced/Alternative):**
+
+    If you prefer running steps individually via the command line, you can use:
+
+    ```bash
+    python crawler.py         # Crawl for new articles
+    python main.py 5          # Generate posts for up to 5 articles
+    python Approve.py         # Approve or deny generated posts
+    python send.py            # Publish approved posts to Twitter
+    ```
+
+    *(Replace 5 with your preferred number of articles to process)*
+
+## Usage
 ## Notes
 
-- **Do not commit your `config.txt` or any API keys to version control.** Add `config.txt` to your `.gitignore` file.
 - You can add support for more platforms by extending `socialmedia.py` and related scripts.
 
 ---
