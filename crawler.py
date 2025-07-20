@@ -3,8 +3,13 @@
 import requests
 from bs4 import BeautifulSoup
 from tracker import init_tracker
+from config import load_config
 
-SITEMAP_URL = "https://florisera.com/post-sitemap.xml"
+cfg = load_config()
+SITEMAP_URL = cfg.get("SITEMAP_URL")
+if not SITEMAP_URL:
+    raise ValueError("SITEMAP_URL not set in config.txt")
+
 TRACKER_FILE = "article_tracker.csv"
 
 def get_article_urls_from_sitemap(sitemap_url):
