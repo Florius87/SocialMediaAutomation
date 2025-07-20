@@ -47,6 +47,7 @@ This project automates the process of scraping articles from [florisera.com](htt
 2. **Add a `config.txt` file with your API keys and settings:**
 
     ```
+    SITEMAP_URL=https://florisera.com/post-sitemap.xml
     API_URL=your_openai_endpoint
     API_KEY=your_openai_key
     TWITTER_API_KEY=your_twitter_key
@@ -54,6 +55,7 @@ This project automates the process of scraping articles from [florisera.com](htt
     TWITTER_ACCESS_TOKEN=your_twitter_access_token
     TWITTER_ACCESS_SECRET=your_twitter_access_secret
     ```
+
 
 3. **Run the Workflow (Recommended: GUI):**
 
